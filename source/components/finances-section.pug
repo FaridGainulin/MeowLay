@@ -1,0 +1,53 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      h2.finances-section__title.font-w-bold.font-s-50
+        | Франшиза МЯУЛАЙ 
+        br.no-br
+        span.color-orange в цифрах
+      .finances-section__sub-title.font-s-20
+        | Получите подробный план открытия
+      .swiper-finances
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            img.finances-section__card-img(src="images/finances-section-card-img-1.jpg" loading="lazy" width="760" height="520" alt="image")
+          .finances-section__card.finances-card-beige.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon-1.svg" loading="lazy" width="46" height="46" alt="icon")
+            .finances-section__card-title.font-w-medium.font-s-40.color-text-main от 342 000 ₽
+            .font-s-18 средняя чистая <br> ежемесячная прибыль
+          .finances-section__card.finances-card-orange.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon-2.svg" loading="lazy" width="46" height="46" alt="icon")
+            .finances-section__card-title.font-w-medium.font-s-40.color-white от 1,8 млн ₽
+            .font-s-18.color-white первоначальные <br> инвестиции
+          .finances-section__card.finances-card-beige.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon-3.svg" loading="lazy" width="46" height="46" alt="icon")
+            .finances-section__card-title.font-w-medium.font-s-40.color-text-main от 4,1 млн ₽
+            .font-s-18 средняя чистая <br> годовая прибыль
+          .finances-section__card.finances-card-green.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon-4.svg" loading="lazy" width="46" height="46" alt="icon")
+            .finances-section__card-title.font-w-medium.font-s-40.color-text-main от 16,8%
+            .font-s-18 рентабельность <br> по чистой прибыли
+          .finances-section__card.swiper-slide
+            img.finances-section__card-img(src="images/finances-section-card-img-2.jpg" loading="lazy" width="760" height="520" alt="image")
+          .finances-section__card.swiper-slide
+            img.finances-section__card-img(src="images/finances-section-card-img-3.jpg" loading="lazy" width="760" height="520" alt="image")
+          .finances-section__card.finances-card-beige.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon-5.svg" loading="lazy" width="46" height="46" alt="icon")
+            .finances-section__card-title.font-w-medium.font-s-40.color-text-main от 2 месяцев
+            .font-s-18 чтобы начать <br> зарабатывать
+          .finances-section__card.finances-card-green.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon-6.svg" loading="lazy" width="46" height="46" alt="icon")
+            .finances-section__card-title.font-w-medium.font-s-40.color-text-main от 7 месяцев
+            .font-s-18 срок окупаемости <br> вашего бизнеса
+        .finances-pagination.swiper-progress-finances
+      .finances-section__bottom-title.font-s-32
+        | Ознакомьтесь детально 
+        br.no-br
+        span.font-w-bold с финансовыми расчетами 
+        br.no-br
+        span.font-w-bold вашего будущего бизнеса
+      .font-w-light.font-s-20 Скачайте финансовую модель МЯУЛАЙ
+      form.finances-section__form(data-feedback-form)
+        input.input.input--secondary(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input.input--secondary(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Скачать

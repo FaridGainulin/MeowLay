@@ -1,0 +1,62 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      .city-section__round-green
+      .city-section__round-gradient
+      .city-section__round-blur
+      h2.city-section__title.font-w-bold.font-s-50.text-center
+        | Вы можете открыть бизнес 
+        br
+        span.color-orange в одном из трех форматов
+      .swiper-city
+        .city-section__cards.swiper-wrapper
+          .city-section__card.swiper-slide
+            .city-section__card-header
+              .city-section__card-num.font-w-bold.font-s-20 01
+              .font-w-bold.font-s-28 Ветеринарный <br> кабинет
+            .font-s-18
+              | Получите описание формата 
+              br.no-br
+              | и узнайте размер 
+              br.no-br
+              | инвестиций
+            img.city-section__card-icon(src="images/city-section-card-icon.png" loading="lazy" width="60" height="39" alt="icon")
+            button.btn.city-section__card-btn(data-remodal-target="modal-form-investments") получить
+          .city-section__card.swiper-slide
+            .city-section__card-header
+              .city-section__card-num.font-w-bold.font-s-20 02
+              .font-w-bold.font-s-28 Ветклиника <br> Mini
+            .font-s-18
+              | Получите описание формата 
+              br.no-br
+              | и узнайте размер 
+              br.no-br
+              | инвестиций
+            img.city-section__card-icon(src="images/city-section-card-icon.png" loading="lazy" width="60" height="39" alt="icon")
+            button.btn.city-section__card-btn(data-remodal-target="modal-form-investments") получить
+          .city-section__card.swiper-slide
+            .city-section__card-header
+              .city-section__card-num.font-w-bold.font-s-20 03
+              .font-w-bold.font-s-28 Ветклиника <br> Standart
+            .font-s-18
+              | Получите описание формата 
+              br.no-br
+              | и узнайте размер 
+              br.no-br
+              | инвестиций
+            img.city-section__card-icon(src="images/city-section-card-icon.png" loading="lazy" width="60" height="39" alt="icon")
+            button.btn.city-section__card-btn(data-remodal-target="modal-form-investments") получить
+        .city-pagination.swiper-progress-city
+      .city-section__bottom-title.text-center.font-w-bold.font-s-50
+        | Начните свой бизнес 
+        br
+        | прямо сейчас
+      .font-w-light.font-s-20.text-center
+        | Проверьте, свободен ли ваш город 
+        br
+        | для работы по франшизе
+      form.city-section__form(data-feedback-form)
+        input.input(type="text" name="city" autocomplete="off" placeholder="Город")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Проверить
+      include ../components/footer.pug

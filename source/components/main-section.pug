@@ -1,0 +1,50 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      .main-section__round-orange
+      .main-section__round-green
+      .main-section__round-beige
+      include ../components/header.pug
+      h1.main-section__title.font-w-bold.font-s-46
+        | Откройте свою 
+        br.no-br
+        | франшизу ветеринарной 
+        br.no-br
+        | клиники МяуЛай 
+        span.color-orange вместе 
+        br.no-br
+        span.color-orange с опытным партнером
+      .main-section__body
+        .main-section__body-text.font-s-18.text-center
+          | Начните 
+          br.no-br
+          | зарабатывать 
+          br.no-br
+          span.font-w-bold от 4,1 млн рублей в год 
+          br.no-br
+          | заботясь о здоровье 
+          br.no-br
+          | домашних 
+          br.no-br
+          | питомцев
+        .main-section__body-left
+          .font-s-18
+            | Получите подробный 
+            br.no-br
+            | план открытия
+          form.main-section__form(data-feedback-form)
+            input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn(type="submit") Получить
+      .swiper-main
+        .main-section__cards.swiper-wrapper
+          .main-section__card.swiper-slide
+            .font-w-semi-bold.font-s-16.text-up Большая маржинальность
+          .main-section__card.swiper-slide
+            .font-w-semi-bold.font-s-16.text-up Поддержка на всех этапах
+          .main-section__card.swiper-slide
+            .font-w-semi-bold.font-s-16.text-up Стабильная прибыль
+        .main-pagination.swiper-progress-main
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1120" height="1304" alt="image")
+      .main-section__text-bg-wrapper
+        .main-section__text-bg

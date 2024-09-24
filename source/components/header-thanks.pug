@@ -1,0 +1,12 @@
+header.header
+  .header__container
+    .header__brand
+      img.header__logo(src="images/header-logo.png" loading="lazy" width="538" height="164" alt="logo")
+      .header__text
+        .header__brand-name.font-w-s-bold.font-s-18 ТАТЛЫ
+        .header__brand-title.font-w-regular.font-s-16 Франшиза сети магазинов <br> десертов и полуфабрикатов
+    .header__connection
+      a(href="tel:+78000000000")
+        img.header__connection-icon(src="images/connection-icon.svg" loading="lazy" width="20" height="20" alt="icon")
+      include ../components/phone-number.pug
+      //- .header__call-me.font-s-12(data-remodal-target="modal-form-call-me") Обратный звонок

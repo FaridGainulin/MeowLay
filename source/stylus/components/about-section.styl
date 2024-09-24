@@ -1,0 +1,178 @@
+.about-section
+  background-image: url('../images/about-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #B9C878
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 60px 0 40px 0
+    +above($breakpoints.md)
+      padding 80px 0 60px 0
+    +above($breakpoints.xxl)
+      padding 100px 0 89px 0
+
+  &__round-orange
+    position: absolute
+    border-radius: 50%
+    background-color #EB7F00
+    width: 50px;
+    height: 50px;
+    right: -28px;
+    bottom: 462px;
+    +above($breakpoints.sm)
+      width: 150px;
+      height: 150px;
+      right: -215px;
+      bottom: 460px;
+    +above($breakpoints.md)
+      width: 180px;
+      height: 180px;
+      right: -291px;
+      bottom: 567px;
+    +above($breakpoints.xxl)
+      width 200px
+      height: 200px
+      right: -453px
+      bottom: 680px
+
+  &__round-gradient
+    position: absolute
+    border-radius: 50%
+    background: linear-gradient(215.04deg, rgb(185, 200, 120) 9.244%,rgb(235, 127, 0) 85.528%)
+    width: 80px;
+    height: 80px;
+    left: -67px;
+    bottom: 154px;
+    +above($breakpoints.sm)
+      width: 180px;
+      height: 180px;
+      left: -237px;
+      bottom: 182px;
+    +above($breakpoints.md)
+      width: 250px;
+      height: 250px;
+      left: -340px;
+      bottom: 169px;
+    +above($breakpoints.xxl)
+      width 350px
+      height: 350px
+      left: -515px
+      bottom: 186px
+
+  &__top
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+    +above($breakpoints.sm)
+      flex-direction: row
+      align-items: flex-start
+      justify-content space-between
+
+  &__text
+    text-align: center
+    color: #78655C
+    +above($breakpoints.sm)
+      text-align: start
+
+  &__img
+    width 300px
+    height: auto
+    +above($breakpoints.sm)
+      width 330px
+    +above($breakpoints.md)
+      width 432px
+    +above($breakpoints.xxl)
+      width 532px
+
+  &__title
+    padding 15px 0 15px 0
+    text-align: center
+    +above($breakpoints.sm)
+      padding 35px 0 35px 0
+    +above($breakpoints.md)
+      padding 45px 0 45px 0
+    +above($breakpoints.xxl)
+      padding 60px 0 56px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+
+  &__card
+    width 280px !important
+    border-radius: 20px
+    background-color #fff
+    color: #78655C
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    gap: 8px
+    padding 1px 10px 15px 10px
+    +above($breakpoints.sm)
+      width 174px !important
+      height: 177px
+      padding 10px 10px 20px 10px
+    +above($breakpoints.md)
+      width 226px !important
+      height: 210px
+      padding 10px 10px 25px 10px
+      gap: 11px
+    +above($breakpoints.xxl)
+      width 280px !important
+      height: 230px
+      padding 10px 10px 30px 10px
+
+  &__card-icon
+    width 75px
+    height: auto
+    +above($breakpoints.sm)
+      width 82px
+    +above($breakpoints.md)
+      width 88px
+    +above($breakpoints.xxl)
+      width 93px
+
+  &__bottom-title
+    padding 1px 0 15px
+    +above($breakpoints.sm)
+      padding 40px 0 20px 0
+    +above($breakpoints.md)
+      padding 50px 0 25px 0
+    +above($breakpoints.xxl)
+      padding 60px 0 30px 0
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    margin-top 20px
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content center
+      gap: 8px
+      margin-top 30px
+    +above($breakpoints.md)
+      gap: 12px
+      margin-top 35px
+    +above($breakpoints.xxl)
+      margin-top 41px
+      gap: 14px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 220px !important
+      +above($breakpoints.md)
+        width 240px !important
+      +above($breakpoints.xxl)
+        width 251px !important

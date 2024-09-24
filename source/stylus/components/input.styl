@@ -1,0 +1,142 @@
+.input
+  height: 45px
+  width 100%
+  padding: 0 27px;
+  font-family: 'Montserrat-Regular'
+  font-weight: 400
+  font-size: 14px;
+  line-height: 120%
+  color: rgba(35, 35, 35, 0.5)
+  // border: 1px solid #000
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5)
+  position relative
+  overflow hidden
+
+  &.active
+    .input__progress
+      opacity 1
+      min-width: 40px
+      span
+        opacity 1
+  &__progress
+    position: absolute
+    height: 100%
+    top: 0
+    left: 0
+    background: #3D261B
+    opacity 0
+    min-width: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 16px
+    line-height: 16px
+    transition: min-width 1s, opacity 0.8s
+    color: #fff
+    font-weight: bold
+    border-radius: 10px
+    +above($breakpoints.xxl)
+      font-size: 20px
+      line-height: 20px
+    span
+      opacity 0
+      transition: 2s
+
+  transition border-color 0.3s, box-shadow 0.3s, border 0.3s, background 0.3s
+  &:hover
+    border 1px solid #E5CFBA
+  &:focus
+    color: #3D261B
+    caret-color: #AFCA35
+    // border 1px solid #91B77C
+    box-shadow: 3px 3px 20px 0px #E5CFBA
+    background: #fff
+    &::placeholder
+      color: rgba(35, 35, 35, 0.5)
+  &::placeholder
+    color: rgba(35, 35, 35, 0.5)
+  +above($breakpoints.sm)
+    height: 50px
+    font-size: 14px;
+  +above($breakpoints.md)
+    height: 55px
+    font-size: 16px;
+  +above($breakpoints.xxl)
+    font-size: 18px;
+    height: 60px
+  &.error
+    border 1px solid $color-error
+    color: $color-error
+    caret-color: $color-error
+    box-shadow: 0px 0px 22px 0px $color-error
+    background: transparent
+    &::placeholder
+      color: $color-error
+    &::-ms-input-placeholder
+      color: $color-error
+    animation: shake 0.6s;
+    @keyframes shake
+      10%, 90%
+        transform: translate3d(-1px, 0, 0)
+      20%, 80%
+        transform: translate3d(2px, 0, 0)
+      30%, 50%, 70%
+        transform: translate3d(-4px, 0, 0)
+      40%, 60%
+        transform: translate3d(4px, 0, 0)
+
+  &--textarea
+    outline none
+    border: none
+    padding: 15px 10px 10px 20px
+    resize: none
+    height: 70px
+    width 280px
+    border-radius: 20px
+    +above($breakpoints.sm)
+      height: 120px;
+      width: 220px;
+    +above($breakpoints.md)
+      border-radius: 30px
+      height: 135px;
+      width: 240px;
+    +above($breakpoints.xxl)
+      border-radius: 40px
+      padding: 30px 10px 10px 20px
+      height: 180px
+      width 260px
+
+  &--secondary
+    background-color #FFEEDD
+    &:hover
+      border 1px solid #E5CFBA
+      background: #fff
+    &:focus
+      color: #3D261B
+      caret-color: #AFCA35
+      border 1px solid #E5CFBA
+      box-shadow: 3px 3px 20px 0px #FFEEDD
+      background: #fff
+
+  &--tertiary
+    background-color #fff
+
+  &--modal
+    color: #fff
+    border: 1px solid #fff
+    &:hover
+      border 2px solid #91B77C
+    &:focus
+      color: #fff
+      caret-color: #fff
+      border 2px solid #91B77C
+      box-shadow: 3px 3px 20px 0px #91B77C
+      background: transparent
+      &::placeholder
+        color: #fff
+    &::placeholder
+      color: #fff
+
+  &--city
+    border 1px solid #E5CFBA

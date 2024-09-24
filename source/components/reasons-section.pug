@@ -1,0 +1,48 @@
+section.reasons-section
+  .reasons-section__wrapper
+    .reasons-section__container
+      .reasons-section__cards-box
+        .reasons-section__cards-box-line-1
+        .reasons-section__cards-box-line-2
+        img.reasons-section__cards-box-icon(src="images/reasons-section-cards-box-icon.png" loading="lazy" width="392" height="486" alt="icon")
+        h2.reasons-section__title.font-w-bold.font-s-50
+          | 4 причины открыть 
+          br.no-br
+          | 5GMASTERS
+        .swiper-reasons
+          .reasons-section__cards.swiper-wrapper
+            .reasons-section__card.swiper-slide.card-transform-rotate-positive
+              .reasons-section__card-wrapper
+                img.reasons-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="30" height="30" alt="icon")
+                .reasons-section__card-title.font-w-bold.font-s-36.text-up Спрос
+                .reasons-section__card-text.font-s-18 Стабильно высокий спрос <br> и широкие возможности
+            .reasons-section__card.swiper-slide.card-transform-rotate-negative
+              .reasons-section__card-wrapper
+                img.reasons-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="30" height="30" alt="icon")
+                .reasons-section__card-title.font-w-bold.font-s-36.text-up Прибыль
+                .reasons-section__card-text.font-s-18 Большая маржинальность <br> и высокая рентабельность
+            .reasons-section__card.swiper-slide.card-transform-rotate-negative
+              .reasons-section__card-wrapper
+                img.reasons-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="30" height="30" alt="icon")
+                .reasons-section__card-title.font-w-bold.font-s-36.text-up Опыт
+                .reasons-section__card-text.font-s-18 Надежная и проверенная <br> финансовая модель
+            .reasons-section__card.swiper-slide.card-transform-rotate-positive
+              .reasons-section__card-wrapper
+                img.reasons-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="30" height="30" alt="icon")
+                .reasons-section__card-title.font-w-bold.font-s-36.text-up Комьюнити
+                .reasons-section__card-text.font-s-18 Самореализация и статус <br> хозяина бизнеса
+          .reasons-pagination.swiper-progress-reasons
+      .reasons-section__bottom
+        img.reasons-section__bottom-icon(src="images/reasons-section-bottom-icon.svg" loading="lazy" width="68" height="73" alt="icon")
+        .reasons-section__bottom-title
+          .font-w-bold.font-s-32
+            | Узнайте о других преимуществах 
+            br.no-br
+            | бизнеса по франшизе 5GMASTERS
+          .font-s-24 Скачайте подробную презентацию
+        .reasons-section__bottom-form
+          .font-w-bold.font-s-14 Получите подробную презентацию
+          form.reasons-section__form(data-feedback-form)
+            input.input.reasons-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input.reasons-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn.reasons-item(type="submit") ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ

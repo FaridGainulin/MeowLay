@@ -1,0 +1,101 @@
+.advantages-section
+  background-image: url('../images/advantages-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #f8f8f9
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 60px 0 60px 0
+    +above($breakpoints.md)
+      padding 80px 0 100px 0
+    +above($breakpoints.xxl)
+      padding 105px 0 124px 0
+
+  &__text
+    padding 20px 0 20px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding 30px 0 40px 0
+    +above($breakpoints.md)
+      padding 40px 0 80px 0
+    +above($breakpoints.xxl)
+      padding 44px 0 105px 0
+
+  &__items
+    padding 20px 0 0 0
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      gap: 10px
+      padding 35px 0 20px 0
+    +above($breakpoints.md)
+      gap: 20px
+      padding 45px 0 29px 0
+    +above($breakpoints.xxl)
+      padding 55px 0 29px 0
+
+  &__item-1,
+  &__item-2
+    width 280px !important
+    height: 155px
+    padding 20px 20px 20px 20px
+    background-color #FF8706
+    border-radius: 15px
+    +above($breakpoints.sm)
+      width 358px !important
+      height: 190px
+      padding 20px 0 20px 0
+    +above($breakpoints.md)
+      width: 473px !important;
+      height: 242px;
+      padding 31px 0 20px 0
+    +above($breakpoints.xxl)
+      width 580px !important
+      height: 288px
+      padding 41px 0 20px 0
+
+  &__icon
+    margin 0 auto 10px
+    width 40px
+    height: 40px
+    +above($breakpoints.sm)
+      width 60px
+      height: 60px
+    +above($breakpoints.md)
+      width 70px
+      height: 70px
+      margin 0 auto 19px
+    +above($breakpoints.xxl)
+      width 90px
+      height: 90px
+
+  &__bottom
+    color: $color-white
+    text-align: center
+    padding 20px 20px 20px 20px
+    border-radius: 15px
+    background-color #ff9611
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+      gap: 0
+      justify-content space-between
+      background-image: url('../images/advantages-section-bottom-bg.jpg')
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      background-color #4A1C1C
+      padding 20px 20px 20px 20px
+      text-align: start
+    +above($breakpoints.md)
+      padding 40px 38px 38px 40px
+    +above($breakpoints.xxl)
+      padding 53px 48px 49px 59px

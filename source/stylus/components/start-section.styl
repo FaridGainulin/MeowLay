@@ -1,0 +1,182 @@
+.start-section
+  background-image: url('../images/start-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #F8F5F2
+
+  &__container
+    position relative
+
+  &__img
+    position: absolute
+    width: 230px;
+    height: auto;
+    bottom: 273px;
+    left: 30px;
+    +above($breakpoints.sm)
+      width: 360px;
+      bottom: 0px;
+      left: 106px;
+    +above($breakpoints.md)
+      width: 500px;
+      bottom: 0;
+      left: 120px;
+    +above($breakpoints.xxl)
+      width 654px
+      bottom: 0
+      left: 120px
+
+  &__top
+    width 100%
+    background-color #fff
+    border-radius: 0 0 20px 20px
+    text-align: center
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 50px 0 30px 0
+    +above($breakpoints.md)
+      padding 80px 0 40px 0
+    +above($breakpoints.xxl)
+      padding 100px 0 59px 0
+
+  &__sub-title
+    padding 15px 0
+    +above($breakpoints.sm)
+      padding 20px 0
+    +above($breakpoints.md)
+      padding 25px 0
+    +above($breakpoints.xxl)
+      padding 30px 0
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content center
+      gap: 8px
+    +above($breakpoints.md)
+      gap: 10px
+    +above($breakpoints.xxl)
+      gap: 14px
+
+  &__bottom
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+    text-align: center
+    padding 20px 0 1px 0
+    +above($breakpoints.sm)
+      text-align: start
+      flex-direction: row
+      justify-content space-between
+      align-items: flex-start
+      padding 50px 0 80px 0
+    +above($breakpoints.md)
+      padding 60px 0 100px 0
+    +above($breakpoints.xxl)
+      padding 80px 0 160px 0
+
+  &__bottom-text
+    padding 20px 0 215px 0
+    +above($breakpoints.sm)
+      padding 20px 0 20px 0
+    +above($breakpoints.md)
+      padding 45px 0 25px 0
+    +above($breakpoints.xxl)
+      padding 56px 0 30px 0
+
+  &__bottom-form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    width 280px
+    margin 0 auto
+    +above($breakpoints.sm)
+      margin 0
+      width 230px
+      gap: 8px
+    +above($breakpoints.md)
+      gap: 12px
+      width 240px
+    +above($breakpoints.xxl)
+      width 251px
+      gap: 14px
+
+  &__bottom-right-text
+    text-align: center
+    padding 0 0 15px 0
+    +above($breakpoints.sm)
+      text-align: start
+      padding 0 0 30px 20px
+    +above($breakpoints.md)
+      padding 26px 0 35px 25px
+    +above($breakpoints.xxl)
+      padding 36px 0 40px 30px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 15px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__card
+    width 260px !important
+    display: flex
+    align-items: baseline
+    gap: 5px
+    text-align: start
+    +above($breakpoints.sm)
+      width 270px !important
+      gap: 10px
+    +above($breakpoints.md)
+      width 360px !important
+      gap: 15px
+    +above($breakpoints.xxl)
+      width 410px !important
+      gap: 20px
+
+  &__owner
+    position: absolute
+    backdrop-filter: blur(26.7px);
+    background: rgba(255, 255, 255, 0.4)
+    border-radius: 10px
+    padding 8px
+    bottom: 307px;
+    left: 25px;
+    +above($breakpoints.sm)
+      padding 8px 10px 8px 10px
+      bottom: 84px;
+      left: 241px;
+    +above($breakpoints.md)
+      padding 8px 10px 10px 20px
+      bottom: 103px;
+      left: 262px;
+    +above($breakpoints.xxl)
+      padding 8px 6px 10px 24px
+      width 247px
+      height: 58px
+      bottom: 165px
+      left: 338px
+
+.input-city-position
+  position relative
+  left: -28px;
+  top: -1px;
+.start-item
+  width 280px !important
+  +above($breakpoints.sm)
+    width 320px !important
+  +above($breakpoints.md)
+    width 340px !important
+  +above($breakpoints.xxl)
+    width 360px !important

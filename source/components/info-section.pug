@@ -1,0 +1,35 @@
+section.info-section
+  .wrapper
+    .info-section__container
+      h2.info-section__title.font-w-bold.font-s-40
+        | Узнайте больше 
+        br.no-br
+        | о франшизе
+      .info-section__sub-title.font-s-18
+        | Оставьте заявку, и мы с удовольствием расскажем вам:
+      .swiper-info
+        .info-section__cards.swiper-wrapper
+          .info-section__card.swiper-slide
+            .font-w-semi-bold.font-s-18.color-olive 01
+            .font-s-18 Как избежать ошибок на старте
+          .info-section__card.swiper-slide.info-card-border
+            .font-w-semi-bold.font-s-18.color-olive 02
+            .font-s-18 Как выстроить работу с клиентами
+          .info-section__card.swiper-slide
+            .font-w-semi-bold.font-s-18.color-olive 03
+            .font-s-18 Как качественно выполнять услуги
+          .info-section__card.swiper-slide.info-card-border
+            .font-w-semi-bold.font-s-18.color-olive 04
+            .font-s-18 Как повысить средний чек
+          .info-section__card.swiper-slide
+            .font-w-semi-bold.font-s-18.color-olive 05
+            .font-s-18 Как стать студией №1 в своем городе
+        .info-pagination.swiper-progress-info
+      img.info-section__img(src="images/info-section-img.png" loading="lazy" width="1120" height="992" alt="image")
+      .info-section__bottom
+        .font-w-bold.font-s-40.text-center Запишитесь на тест-драйв франшизы!
+        form.info-section__form(data-feedback-form)
+          input.input.input--secondary(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input.input--secondary(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          input.input.input--secondary(type="text" name="email" autocomplete="off" placeholder="E-mail")
+          button.btn.btn--tertiary(type="submit") Записаться
