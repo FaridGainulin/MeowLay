@@ -19,6 +19,7 @@ section.start-section
             .input__progress.js-input-city-progress
               span.js-input-city-percent 0%
           button.btn.start-item(type="submit") Получить список локаций
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
       .start-section__bottom
         .start-section__bottom-left
           .start-section__bottom-title.font-w-bold.font-s-50
@@ -28,10 +29,14 @@ section.start-section
             br.no-br
             span.color-orange МЯУЛАЙ
           .start-section__bottom-text.font-w-light.font-s-20 Запишитесь на тест-драйв
-          form.start-section__bottom-form(data-feedback-form)
-            input.input.input--tertiary(type="text" name="name" autocomplete="off" placeholder="Имя")
-            input.input.input--tertiary(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
-            button.btn(type="submit") Записаться
+          form.start-section__bottom-form-wrapper(data-feedback-form)
+            .start-section__bottom-form
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              input.input.input--tertiary(type="text" name="name" autocomplete="off" placeholder="Имя")
+              input.input.input--tertiary(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+              button.btn(type="submit") Записаться
+            .start-section__agree-wrapper
+              include ../components/agree.pug
         .start-section__bottom-right
           .start-section__bottom-right-text.font-w-medium.font-s-20
             | Запишитесь на тест-драйв 

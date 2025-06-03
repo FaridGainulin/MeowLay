@@ -1,12 +1,79 @@
 .agree
+  user-select: none;
+
   &__container
-    color: #FFF
     display: flex
-    gap: 8px
-    margin-top 10px
+    justify-content center
+    align-items: flex-start
+    gap: 10px
     +above($breakpoints.sm)
-      margin-top 16px
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 15px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__input
+    width 0
+    height 0
+    opacity 0
+    position absolute
+
+  &__icon
+    cursor pointer
+    display: block;
+    width 11px;
+    flex-shrink: 0;
+    height: 11px;
+    border: 1px solid #8A401C
+    border-radius: 2px
+    position: relative
+    transition: border 0.3s
+
+    &::after
+      content: "";
+      width calc(100% + 2px)
+      height calc(100% + 2px)
+      position: absolute
+      top: -1px
+      left: -1px
+      background: url('../images/checkbox.svg')
+      background-size: cover
+      opacity 0
+      transition: opacity 0.3s
+
+    +above($breakpoints.sm)
+      width 12px
+      height: 12px
+    +above($breakpoints.md)
+      width 14px
+      height: 14px
+    +above($breakpoints.xxl)
+      width 15px
+      height: 15px
 
   &__privacy
     text-decoration: underline
     cursor pointer
+
+  &__input.error + &__icon
+    border-color $color-error
+    box-shadow: 0px 0px 22px 0px $color-error
+    animation: shake 0.6s;
+    @keyframes shake
+      10%, 90%
+        transform: translate3d(-1px, 0, 0)
+      20%, 80%
+        transform: translate3d(2px, 0, 0)
+      30%, 50%, 70%
+        transform: translate3d(-4px, 0, 0)
+      40%, 60%
+        transform: translate3d(4px, 0, 0)
+
+  &__input.error + &__icon + &__text
+    color: $color-error
+
+  &__input:checked + &__icon
+    border-color: transparent
+    &::after
+      opacity 1

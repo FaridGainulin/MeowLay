@@ -173,3 +173,19 @@
         width 240px !important
       +above($breakpoints.xxl)
         width 251px !important
+
+  &__agree-wrapper
+    margin-top 15px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      margin-top 15px
+    +above($breakpoints.md)
+      margin-top 15px
+    +above($breakpoints.xxl)
+      margin-top 15px
+
+  &__agree-wrapper .agree__text
+    display: grid
+    +above($breakpoints.sm)
+      display: block

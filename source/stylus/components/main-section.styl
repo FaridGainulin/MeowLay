@@ -116,16 +116,20 @@
       gap: 50px
       margin-bottom 50px
     +above($breakpoints.md)
-      gap: 100px
+      gap: 72px
       margin-bottom 90px
     +above($breakpoints.xxl)
       margin-bottom 134px
-      gap: 157px
+      gap: 105px
 
   &__body-text
+    +above($breakpoints.sm)
+      padding-top 58px
+    +above($breakpoints.md)
+      padding-top 78px
     +above($breakpoints.xxl)
       line-height 133% !important
-      padding-top 10px
+      padding-top 80px
 
   &__form
     display: flex
@@ -146,6 +150,18 @@
       padding-top 30px
       width 251px
       gap: 14px
+
+  &__agree-wrapper
+    margin-top 15px
+    +above($breakpoints.sm)
+      margin-top 15px
+    +above($breakpoints.md)
+      margin-top 15px
+    +above($breakpoints.xxl)
+      margin-top 15px
+
+  &__agree-wrapper .agree__text
+    display: grid
 
   &__cards
     +above($breakpoints.sm)

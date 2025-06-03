@@ -106,7 +106,11 @@ section.support-section
         span.font-w-bold Получите подробный план
         br
         | по открытию МЯУЛАЙ
-      form.support-section__form(data-feedback-form)
-        input.input.input--tertiary(type="text" name="name" autocomplete="off" placeholder="Имя")
-        input.input.input--tertiary(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
-        button.btn(type="submit") получить план
+      form(data-feedback-form)
+        .support-section__form
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input.input--tertiary(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input.input--tertiary(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") получить план
+        .support-section__agree-wrapper
+          include ../components/agree.pug

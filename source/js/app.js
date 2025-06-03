@@ -1,3 +1,5 @@
+//АНИМАЦИЯ КНОПКИ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ
+////////////////////////////////////////////////////////////////////////////
 function initAnchorBtn() {
   $('[data-scroll-top]').on('click', function () {
     $('.modal-scrollable').animate(
@@ -9,6 +11,19 @@ function initAnchorBtn() {
   })
 }
 
+//////////////////////////////////////////////////////////////////////////
+//ВАЛИДАЦИЯ ИНПУТА
+//////////////////////////////////////////////////////////////////////////
+function filterInvalidCharacters() {
+  $('input[name="name"]').on('input', function() {
+    let value = $(this).val();
+    $(this).val(value.replace(/[^a-zA-Zа-яА-ЯёЁ\s]/g, ''));
+  });
+}
+
+/////////////////////////////////////////////////////////////////////////
+//АНИМАЦИЯ ПРОГРЕССА ИНПУТА ГОРОД
+//////////////////////////////////////////////////////////////////////////
 function cityProgress(e) {
   e.preventDefault()
   if (!$(this).valid()) {
@@ -44,21 +59,8 @@ function initCityForm() {
 
 $(document).ready(function () {
   initAnchorBtn()
+  filterInvalidCharacters()
   initCityForm()
 
   $('input').inputmask()
 })
-
-
-
-
-const cards = document.querySelectorAll('.card-quantity');
-const input = document.getElementById('quantityInput');
-
-cards.forEach(card => {
-  card.addEventListener('click', () => {
-    cards.forEach(c => c.classList.remove('active'));
-    card.classList.add('active');
-    input.value = card.dataset.quantity;
-  });
-});
